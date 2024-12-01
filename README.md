@@ -1,4 +1,4 @@
- import java.util.Arrays;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Objects;
 
@@ -13,7 +13,7 @@ public class Main {
         int sum = 0;
         int b = 0;
 
- 
+        
         for (int i = 0; i < number; i++) {
             System.out.println("Enter the name of the " + (i + 1) + "th student");
             list[i][0] = sc.nextLine();
@@ -44,7 +44,7 @@ public class Main {
             System.out.println();
         }
 
-       
+    
         while (true) {
             System.out.println("What function do you want to implement?");
             System.out.println("A: Add a new student");
@@ -85,12 +85,12 @@ public class Main {
                 String nameToDelete = sc.nextLine();
                 boolean deleted = false;
 
-            
+               
                 newList = new String[list.length - 1][2];
                 int newIndex = 0;
 
               
-               for (int i = 0; i < list.length; i++) {
+                for (int i = 0; i < list.length; i++) {
                     if (!nameToDelete.equals(list[i][0])) {
                         newList[newIndex] = list[i];
                         newIndex++;
